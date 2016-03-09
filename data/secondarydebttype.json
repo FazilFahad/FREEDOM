@@ -1,0 +1,14 @@
+[
+  {
+    "id":"creditCardDebts",
+    "secondarydebttype":"Credit Card Debt"
+  },
+  {
+    "id":"overdrafts",
+    "secondarydebttype":"Overdrafts"
+  },
+  {
+    "id":"unsecuredDebt",
+    "secondarydebttype":"Unsecured Debt"
+  }
+]

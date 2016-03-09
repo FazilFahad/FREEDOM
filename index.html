@@ -1,0 +1,1133 @@
+<!doctype html>
+<html class="" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>FREEDOM</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain-->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- normalize.min.css for browser compatibility -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--bootstrap.min.css for responsive-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!--DataPicker.min.css for responsive-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+  <!--googlefonts.css for font style-->
+  <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
+  <!--main.css for custom style-->
+  <link rel="stylesheet" href="css/formValidation.min.css">
+  <!--main.css for custom style-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--media-query.css for custom style-->
+  <link rel="stylesheet" href="css/media-query.css">
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <header class="header--fixed" id="header" data-headroom>
+    <section class="primary-nav">
+      <div class="container">
+        <nav class="navbar navbar-default no-margin stylish-navbar no-border no-border-radius bg-transparent">
+          <div class="navbar-header vertical-center">
+            <h1 class="no-margin">
+                <a class="navbar-brand" href="index.html"></a>
+            </h1>
+          </div>
+          <div class="btn-group-wrapper vertical-center">
+            <button type="button" class="btn btn-default easing-effect btn-padding">Save & Exit</button>
+            <button type="button" class="btn btn-success easing-effect btn-padding btn-submit">Submit Details</button>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="container rootwizard" id="rootwizard">
+      <div class="row" class="newTry">
+        <div class="col-xs-2 col-sm-5 col-md-4 col-lg-3 no-padding-right child no-padding-left-sm">
+          <div class="left-sidebar">
+            <h3 class="no-margin">Hello!</h3>
+            <p class="no-margin">Please fill out the forms below.</p>
+            <ul class="nav nav-tabs tabs-left">
+              <li class="active">
+                <a href="#aboutMe" data-toggle="tab">
+                  <u>1</u> About Me
+                </a>
+              </li>
+              <li class="">
+                <a href="#myAddress" data-toggle="tab">
+                  <u>2</u> My Address
+                </a>
+              </li>
+              <li class="">
+                <a href="#employmentDetails" data-toggle="tab">
+                  <u>3</u> Employment Details
+                </a>
+              </li>
+              <li class="">
+                <a href="#yourFinancial" data-toggle="tab">
+                  <u>4</u> My Financial Details
+                </a>
+              </li>
+              <li class="">
+                <a href="#contactDetails" data-toggle="tab">
+                  <u>5</u> Contact Details
+                </a>
+              </li>
+              <li class="">
+                <a href="#thingsToKnow" data-toggle="tab">
+                  <u>6</u> Things you need to know
+                </a>
+              </li>
+              <li class="">
+                <a href="#documentRequired" data-toggle="tab">
+                  <u>7</u>Documents we require<i class="label label-info hidden-xs">New</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-7 col-md-8 col-lg-9 no-padding-left no-padding-right-sm child">
+          <div id="bar" class="progress progress-success progress-striped active no-margin-bottom no-border-radius">
+            <div class="bar bar-success"></div>
+          </div>
+          <div class="right-sidebar section-control parent">
+            <div class="tab-content section-control">
+              <div class="tab-pane about-me active" id="aboutMe">
+                <h2 class="no-margin">About Me</h2>
+                <p>Tell us a bit more about you</p>
+                <form class="section-control valdition-class" action="" id="aboutMeForm">
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fTitle" class="child">Title</label>
+                      <select name="selectBoxValidation" class="form-control combo-box-arrow ftitle-json req" autocomplete='off' id="fTitle">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fFname" class="child">Legal First Name(s)</label>
+                      <input type="text" name="nameValidation" class="form-control req" id="fFname" autocomplete='off'>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fLname" class="child">Legal Last Name</label>
+                      <input type="text" name="nameValidation" class="form-control req" autocomplete='off' id="fLname">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fCommonName" class="child">Common Name</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i><i class="pull-right opt">Optional</i>
+                      <input type="text" name="optStringValidation" class="form-control show-pop" id="fCommonName" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fMaidenPreviousName" class="child">Maiden / Previous Name</label><i class="pull-right opt">Optional</i>
+                      <input name="optStringValidation" type="text" class="form-control" id="fMaidenPreviousName" autocomplete='off'>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fMaritalStatus" class="child">Marital Status</label>
+                      <select class="form-control combo-box-arrow req" name="selectBoxValidation" autocomplete='off' id="fMaritalStatus">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fSex" class="child">Are You</label>
+                      <select class="form-control combo-box-arrow req" name="selectBoxValidation" id="fSex" autocomplete='off'>
+                        <option value="0" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fDateOfBirth" class="child">Date of Birth</label>
+                      <input type="text" class="form-control date-picker-icon date-of-birth req" data-date-picker="dobpicker" name="dateOfBirthValidation" id="fDateOfBirth" autocomplete='off'>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fPlaceOfBirth" class="child">Place of Birth</label>
+                      <input type="text" class="form-control req" id="fPlaceOfBirth" autocomplete='off' name="fPlaceOfBirth">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fNationality" class="child">Nationality</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                      <select name="selectBoxValidation" class="form-control combo-box-arrow show-pop nationality-json req" id="fNationality" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fCitizenship" class="child">Citizenship</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                      <select name="selectBoxValidation" class="form-control combo-box-arrow show-pop nationality-json req" id="fCitizenship" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fResidency" class="child">Residency</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                      <select name="selectBoxValidation" class="form-control combo-box-arrow show-pop nationality-json req" autocomplete='off' id="fResidency" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane my-address" id="myAddress">
+                <h2 class="no-margin">My Address</h2>
+                <p>Tell us a bit more about you</p>
+                <form class="section-control" action="">
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                    <div class="form-group btn-group-bottom input-group contains-postcode">
+                      <label for="fMyAddPostcode1" class="child">Postcode</label>
+                      <input type="text" name="fMyAddPostcode1" autocomplete='off' class="form-control" id="fMyAddPostcode1">
+                      <span class="input-group-btn">
+                              <button class="btn btn-default easing-effect btn-padding btn-get-address" type="button">Get Address!</button>
+                            </span>
+                    </div>
+                  </div>
+                  <!-- <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="form-text">
+                      <a href="">Look up addresses for your Post Code</a>
+                      <a class="btn btn-default easing-effect btn-padding">Get Address</a>
+                    </div>
+                  </div> -->
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fMyAddAddressPicker1" class="child">Select your Address</label>
+                      <select class="form-control combo-box-arrow" autocomplete='off' id="fMyAddAddressPicker1">
+                        <option value="" disabled selected>Select</option>
+                        <option value="25, Northampton Street">25, Northampton Street</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-2">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fMyAddFlatNumber1" class="child">Flat Number</label>
+                      <input type="text" name="fRequired" class="form-control" autocomplete='off' id="fMyAddFlatNumber1">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-2">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fMyAddHouseNumber1" class="child">House Number</label>
+                      <input type="text" name="fRequired" class="form-control" autocomplete='off' id="fMyAddHouseNumber1">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fMyAddBuildingName1" class="child">House or Building Name</label>
+                      <input type="text" class="form-control" autocomplete='off' id="fMyAddBuildingName1" name="fRequired">
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fMyAddStreetName1" class="child">Street Name</label>
+                      <input type="text" class="form-control" autocomplete='off' id="fMyAddStreetName1" name="fRequired">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fMyAddTown1" class="child">Town</label>
+                      <input type="text" class="form-control" autocomplete='off' id="fMyAddTown1" name="fRequired">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fMyAddCounty1" class="child">County</label>
+                      <select class="form-control combo-box-arrow" autocomplete='off' id="fMyAddCounty1" name="selectBoxValidation">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fMyAddCountry1" class="child">Country</label>
+                      <select class="form-control combo-box-arrow nationality-json" autocomplete='off' id="fMyAddCountry1" name="selectBoxValidation">
+                        <option value="0" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fMyAddHowLongLivedHere1" class="child">How long have you lived here in years?</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                      <input type="text" class="form-control show-pop" name="numberValidation" id="fMyAddHowLongLivedHere1" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fMyAddResidentialStatus1" class="child">Residential Status at this address</label>
+                      <select class="form-control combo-box-arrow show-pop" autocomplete='off' id="fMyAddResidentialStatus1" name="selectBoxValidation">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-8">
+                    <div class="form-group btn-group-bottom textarea-cross">
+                      <label for="pMyAdd" class="child">Previous Addresses</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                      <textarea type="text" rows="4" class="form-control show-pop" name="pMyAdd" id="pMyAdd" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane employment-details" id="employmentDetails">
+                <h2 class="no-margin">Employment Details</h2>
+                <p>Tell us a bit more about you</p>
+                <form action="">
+                  <div class="panel-group" id="currentEmploymentDetails" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default property-buy">
+                      <div class="panel-heading" role="tab" id="aboutProperty">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#currentEmploymentDetails" href="#currentEmployeCollapse" aria-expanded="false" aria-controls="currentEmployeCollapse">
+                            Current Employment Details
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="currentEmployeCollapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="currentEmploymentDetails">
+                        <div class="panel-body">
+                          <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fEmplCategory" class="child">Employment Category</label>
+                              <select class="form-control combo-box-arrow employ-category-json" autocomplete='off' id="fEmplCategory" name="selectBoxValidation">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fEmplStatus" class="child">Employment Status</label>
+                              <select class="form-control combo-box-arrow status employ-status-json" autocomplete='off' id="fEmplStatus" name="selectBoxValidation">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fJobDescription" class="child">Job Description</label>
+                              <select class="form-control combo-box-arrow job-desc-json" autocomplete='off' id="fJobDescription" name="selectBoxValidation">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fFullPartTime" class="child">Full / Part Time</label>
+                              <select class="form-control combo-box-arrow full-time-json" id="fFullPartTime" autocomplete='off' name="selectBoxValidation">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fRetireAge" class="child">When will you retire</label>
+                              <input type="text" class="form-control date-picker-icon" autocomplete='off' id="fRetireAge" name="dateAfterValidator" />
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fEmplSince" class="child">When did you Start work with your current employer?</label>
+                              <input type="text" class="form-control date-picker-icon" id="fEmplSince" autocomplete='off' name="dateBeforeValidator">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default your-loan">
+                      <div class="panel-heading" role="tab" id="previousEmploymentDetails">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#currentEmploymentDetails" href="#previousCollapse" aria-expanded="false" aria-controls="previousCollapse">
+                            Previous Employment Details
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="previousCollapse" class="panel-collapse collapse re-run" role="tabpanel" aria-labelledby="previousEmploymentDetails">
+                        <div class="panel-body">
+                          <div class="clone-row" id="previousEmploymentSource">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-current-employ-title">Employment 1</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-plus add-employ">Add another</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrEmplCategory" class="employ-category-for child">Employment Category</label>
+                                  <select class="form-control combo-box-arrow show-pop employ-category-json" autocomplete='off' id="fPrEmplCategory" name="employee[0].category">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrEmplStatus" class="employ-status-for child">Employment Status</label>
+                                  <select class="form-control combo-box-arrow show-pop employ-status-json" autocomplete='off' id="fPrEmplStatus" name="employee[0].status">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrJobDescription" class="employ-job-for child">Job Description</label>
+                                  <select class="form-control combo-box-arrow show-pop job-desc-json" autocomplete='off' id="fPrJobDescription" name="employee[0].job">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrFullPartTime" class="employ-time-for child">Full / Part Time</label>
+                                  <select class="form-control combo-box-arrow show-pop full-time-json" autocomplete='off' id="fPrFullPartTime" name="employee[0].time">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrEmplEnd" class="employ-since-for child">When did you finish work with this employer?</label>
+                                  <input type="text" class="form-control show-pop date-picker-icon" id="fPrEmplEnd" autocomplete='off' name="employee[0].end">
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrEmplStart" class="employ-retire-for child">When did you Start work with this employer?</label>
+                                  <input type="text" class="form-control show-pop date-picker-icon" id="fPrEmplStart" autocomplete='off' name="employee[0].starts">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="clone-row hide" id="previousEmploymentHide">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-current-employ-title">Employment 1</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-remove remove-employ">Remove</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrEmplCategory" class="employ-category-for child">Employment Category</label>
+                                  <select class="form-control combo-box-arrow show-pop employ-category-json" autocomplete='off' id="fPrEmplCategory" name="category">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrEmplStatus" class="employ-status-for child">Employment Status</label>
+                                  <select class="form-control combo-box-arrow show-pop employ-status-json" autocomplete='off' id="fPrEmplStatus" name="status">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrJobDescription" class="employ-job-for child">Job Description</label>
+                                  <select class="form-control combo-box-arrow show-pop job-desc-json" autocomplete='off' id="fPrJobDescription" name="job">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrFullPartTime" class="employ-time-for child">Full / Part Time</label>
+                                  <select class="form-control combo-box-arrow show-pop full-time-json" autocomplete='off' id="fPrFullPartTime" name="time">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrEmplEnd" class="employ-since-for child">When did you finish work with this employer?</label>
+                                  <input type="text" class="form-control show-pop date-picker-icon" id="fPrEmplEnd" autocomplete='off' name="employee[0].end">
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-4">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fPrEmplStart" class="employ-retire-for child">When did you Start work with this employer?</label>
+                                  <input type="text" class="form-control show-pop date-picker-icon" id="fPrEmplStart" autocomplete='off' name="employee[0].starts">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane your-financial" id="yourFinancial">
+                <h2 class="no-margin">My Financial Details</h2>
+                <p>Tell us a bit more about you</p>
+                <form action="">
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default your-income">
+                      <div class="panel-heading" role="tab" id="yourIncome">
+                        <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#incomeCollapse" aria-expanded="true" aria-controls="incomeCollapse">
+                                  Your Income
+                                </a>
+                              </h4>
+                      </div>
+                      <div id="incomeCollapse" class="panel-collapse collapse in re-run" role="tabpanel" aria-labelledby="yourIncome">
+                        <div class="panel-body">
+                          <div class="clone-row" id="incomeSource">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-income-title">Income 1</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-plus add-income">Add another</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fIncType" class="income-type-for child">Income Type</label>
+                                  <select class="form-control combo-box-arrow income-json" id="fIncType" autocomplete='off' name="income[0].incomeType">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fIncAmt" class="amount-type-for child">Amount of Income</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fIncAmt" name="income[0].incomeAmount" autocomplete='off'>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fIncFreq" class="income-freq-for child">Frequency of Income</label>
+                                  <select class="form-control combo-box-arrow frequence-json" name="income[0].incomeFrequency" autocomplete='off' id="fIncFreq">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fIncDtls" class="details-for child">Details / Comments</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                                  <textarea type="text" rows="1" class="form-control show-pop" name="income[0].incomeComments" id="fIncDtls" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="clone-row hide" id="incomeClone">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-income-title">
+                                  Income 2
+                                </span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-remove remove-income">Remove</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fIncType" class="income-type-for child">Income Type</label>
+                                  <select class="form-control combo-box-arrow income-json" autocomplete='off' name="incomeType" id="fIncType">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fIncAmt" class="amount-type-for child">Amount of Income</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" name="incomeAmount" id="fIncAmt" autocomplete='off'>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fIncFreq" class="income-freq-for child">Frequency of Income</label>
+                                  <select class="form-control combo-box-arrow frequence-json" autocomplete='off' id="fIncFreq" name="incomeFrequency">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fIncDtls" class="details-for child">Details / Comments</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                                  <textarea type="text" rows="1" class="form-control show-pop" id="fIncDtls" name="incomeComments" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default your-expenses">
+                      <div class="panel-heading" role="tab" id="yourExpenses">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#expensesCollape" aria-expanded="false" aria-controls="expensesCollape">
+                            Your Expenses
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="expensesCollape" class="panel-collapse collapse re-run" role="tabpanel" aria-labelledby="yourExpenses">
+                        <div class="panel-body">
+                          <div class="clone-row" id="expenseSource">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-expense-title">Expenses 1</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-plus add-expense">Add another</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fExpType" class="expense-type-for child">Expense Type</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                                  <select class="form-control combo-box-arrow show-pop" name="expense[0].expenseType" autocomplete='off' id="fExpType" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fExpAmt" class="expense-amount-for child">Amount of Expense</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" name="expense[0].expenseAmount" id="fExpAmt" autocomplete='off'>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fExpFreq" class="expense-frequence-for child">Expense Frequency</label>
+                                  <select class="form-control combo-box-arrow frequence-json" autocomplete='off' name="expense[0].expenseFrequency" id="fExpFreq">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fExpDtls" class="expense-details-for child">Details / Comments</label>
+                                  <textarea type="text" rows="1" class="form-control show-pop" id="fExpDtls" name="expense[0].expenseComments" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="clone-row hide" id="expenseClone">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-expense-title">Expenses 2</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-remove remove-expense">Remove</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fExpType" class="expense-type-for child">Expense Type</label>
+                                  <select class="form-control combo-box-arrow" autocomplete='off' id="fExpType" name="expenseType">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fExpAmt" class="expense-amount-for child">Amount of Expense</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fExpAmt" autocomplete='off' name="expenseAmount">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fExpFreq" class="expense-frequence-for child">Expense Frequency</label>
+                                  <select class="form-control combo-box-arrow frequence-json" autocomplete='off' id="fExpFreq" name="expenseFrequency">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fExpDtls" class="expense-details-for child">Details / Comments</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                                  <textarea type="text" rows="1" class="form-control show-pop" id="fExpDtls" name="expenseComments" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default your-primary">
+                      <div class="panel-heading" role="tab" id="yourPrimaryDebt">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#primaryCollapse" aria-expanded="false" aria-controls="primaryCollapse">
+                            Your Primary Debt
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="primaryCollapse" class="panel-collapse collapse re-run" role="tabpanel" aria-labelledby="yourPrimaryDebt">
+                        <div class="panel-body">
+                          <div class="clone-row" id="primarySource">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-primary-title">Primary 1</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-plus add-primary">Add another</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fDbtType" class="primary-type-for child">Type of Debt</label>
+                                  <select class="form-control combo-box-arrow" autocomplete='off' id="fDbtType" name="primaryDebt[0].primaryType">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbtBal" class="primary-bal-for child">Balance Outstanding</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fDbtBal" autocomplete='off' name="primaryDebt[0].primaryBal">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbtAmt" class="primary-pay-for child">Regular Payments</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fDbtAmt" autocomplete='off' name="primaryDebt[0].primarypayment">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fDbtFreq" class="primary-frequency-for child">Frequency of Payments</label>
+                                  <select class="form-control combo-box-arrow frequence-json" autocomplete='off' id="fDbtFreq" name="primaryDebt[0].primaryfrequency">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbtDtls" class="primary-comments-for child">Details / Comments</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                                  <textarea type="text" rows="1" class="form-control show-pop" id="fDbtDtls" name="primaryDebt[0].primarycomments" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="clone-row hide" id="primaryClone">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-expense-title">Primary 1</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-remove remove-primary">Remove</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fDbtType" class="primary-type-for child">Type of Debt</label>
+                                  <select class="form-control combo-box-arrow" autocomplete='off' id="fDbtType" name="primaryType">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbtBal" class="primary-bal-for child">Balance Outstanding</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fDbtBal" autocomplete='off' name="primaryBal">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbtAmt" class="primary-pay-for child">Regular Payments</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fDbtAmt" autocomplete='off' name="primarypayment">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fDbtFreq" class="primary-frequency-for child">Frequency of Payments</label>
+                                  <select class="form-control combo-box-arrow frequence-json" autocomplete='off' id="fDbtFreq" name="primaryfrequency">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbtDtls" class="primary-comments-for child">Details / Comments</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                                  <textarea type="text" rows="1" class="form-control show-pop" id="fDbtDtls" name="primarycomments" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default your-secondary">
+                      <div class="panel-heading" role="tab" id="yourSecondaryDebt">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#secondaryCollapse" aria-expanded="false" aria-controls="secondaryCollapse">
+                            Your Secondary Debt
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="secondaryCollapse" class="panel-collapse collapse re-run" role="tabpanel" aria-labelledby="yourSecondaryDebt">
+                        <div class="panel-body">
+                          <div class="clone-row" id="secondarySource">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-primary-title">Primary 1</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-plus add-secondary">Add another</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fDbt2Type" class="secondary-type-for child">Type of Secondary Debt</label>
+                                  <select class="form-control combo-box-arrow" autocomplete='off' id="fDbt2Type" name="secondaryDebt[0].secondaryType">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbt2Bal" class="secondary-bal-for child">Balance Outstanding</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fDbt2Bal" autocomplete='off' name="secondaryDebt[0].secondaryBal">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbt2Amt" class="secondary-pay-for child">Regular Payments</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fDbt2Amt" autocomplete='off' name="secondaryDebt[0].secondarypayment">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fDbt2Freq" class="secondary-frequency-for child">Frequency of Payments</label>
+                                  <select class="form-control combo-box-arrow frequence-json" autocomplete='off' id="fDbt2Freq" name="secondaryDebt[0].secondaryfrequency">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbt2Dtls" class="secondary-comments-for child">Details / Comments</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                                  <textarea type="text" rows="1" class="form-control show-pop" name="secondaryDebt[0].secondarycomments" id="fDbt2Dtls" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="clone-row hide" id="secondaryHide">
+                            <div class="row">
+                              <div class="accordion-title">
+                                <div class="section-control">
+                                  <span class="row-title row-secondary-title">Primary 1</span>
+                                  <button type="button" class="btn btn-primary easing-effect btn-padding pull-right btn-plus remove-secondary">Remove</button>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fDbt2Type" class="secondary-type-for child">Type of Secondary Debt</label>
+                                  <select class="form-control combo-box-arrow" autocomplete='off' id="fDbt2Type" name="secondaryType">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbt2Bal" class="secondary-bal-for child">Balance Outstanding</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fDbt2Bal" autocomplete='off' name="secondaryBal">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbt2Amt" class="secondary-pay-for child">Regular Payments</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon pound-pad">&pound;</div>
+                                    <input type="text" class="form-control" id="fDbt2Amt" autocomplete='off' name="secondarypayment">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-2">
+                                <div class="form-group btn-group-bottom select-container">
+                                  <label for="fDbt2Freq" class="secondary-frequency-for child">Frequency of Payments</label>
+                                  <select class="form-control combo-box-arrow frequence-json" autocomplete='off' id="fDbt2Freq" name="secondaryfrequency">
+                                    <option value="" disabled selected>Select</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-md-6 col-lg-3">
+                                <div class="form-group btn-group-bottom">
+                                  <label for="fDbt2Dtls" class="primary-comments-for child">Details / Comments</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                                  <textarea type="text" rows="1" class="form-control show-pop" name="secondarycomments" id="fDbt2Dtls" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane contact-details" id="contactDetails">
+                <h2 class="no-margin">Contact Details</h2>
+                <p>Tell us a bit more about you</p>
+                <form class="" id="contactDetailsForm help-align">
+                  <div class="col-xs-12 col-md-4 help-align">
+                    <label for="fHomeTel" class="child full-width">Home Telephone</label>
+                    <div class="row">
+                      <div class="col-xs-5 no-padding-right">
+                        <div class="form-group btn-group-bottom select-container">
+                          <div class="input-group full-width">
+                            <select class="form-control combo-box-arrow show-pop prefix-field interNationalCode" autocomplete='off' id="PCountryCodeWork" name="countryCodeSelectBox">
+                              <option value="" disabled selected>Select</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-7 no-padding-left">
+                        <div class="form-group btn-group-bottom">
+                          <div class="input-group full-width">
+                            <i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                            <input type="text" class="integer-count show-pop form-control" autocomplete='off' name="phoneValidation" id="fHomeTel" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4 help-align">
+                    <label for="fWorkTel" class="child full-width">Work Telephone</label>
+                    <div class="col-xs-5 no-padding">
+                      <div class="form-group btn-group-bottom select-container">
+                        <div class="input-group full-width">
+                          <select class="form-control combo-box-arrow prefix-field show-pop interNationalCode" autocomplete='off' id="PCountryCodePhone" name="countryCodeSelectBox">
+                            <option value="" disabled selected>Select</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-7 no-padding">
+                      <div class="form-group btn-group-bottom">
+                        <div class="input-group full-width">
+                          <i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                          <input type="Tel" class="integer-count show-pop form-control" autocomplete='off' name="phoneValidation" id="fWorkTel" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-4 help-align">
+                    <label for="fMobileTel" class="child full-width">Mobile Telephone</label>
+                    <div class="col-xs-5 no-padding">
+                      <div class="form-group btn-group-bottom select-container">
+                        <div class="input-group full-width">
+                          <select class="form-control combo-box-arrow prefix-field show-pop interNationalCode" autocomplete='off' id="PCountryCodeHome" name="countryCodeSelectBox">
+                            <option value="" disabled selected>Select</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-7 no-padding">
+                      <div class="form-group btn-group-bottom">
+                        <div class="input-group full-width">
+                          <i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                          <input type="Tel" class="integer-count show-pop form-control" autocomplete='off' name="phoneValidation" id="fMobileTel" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain."
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-control">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group btn-group-bottom">
+                        <label for="fEmail" class="child">Email Address</label>
+                        <input type="Email" class="form-control" autocomplete='off' name="email" id="fEmail" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-control">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group btn-group-bottom">
+                        <label for="fEmail2" class="child">Please Re-enter your Email</label>
+                        <input type="Email" class="form-control" autocomplete='off' name="email" id="fEmail2" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fPrefContact" class="child">Preferred Method of Contact</label>
+                      <select class="form-control combo-box-arrow" autocomplete='off' id="fPrefContact" name="selectBoxValidation">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fPrefContactTime" class="child">Preferred Contact Time</label>
+                      <select class="form-control combo-box-arrow" autocomplete='off' id="fPrefContactTime" name="selectBoxValidation">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="form-group section-control btn-group-bottom">
+                      <div class="btn-group btn-radio-wrapper foptin" data-toggle="buttons">
+                        <label for="fOptInInternal" class="child">Do you wish to receive marketing material from us</label>
+                        <label class="btn btn-default btn-radio">
+                          <input value="Yes" type="radio" name="marketingMaterial">Yes
+                        </label>
+                        <label class="btn btn-default btn-radio">
+                          <input value="No" class="active" type="radio" name="marketingMaterial">No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="form-group section-control btn-group-bottom">
+                      <div class="btn-group btn-radio-wrapper" data-toggle="buttons">
+                        <label for="fOptIn3rdParty" class="child">Do you wish to Receive marketing material from selected 3rd parties</label>
+                        <label class="btn btn-default btn-radio">
+                          <input value="Yes" type="radio" name="marketingMaterial3parties">Yes
+                        </label>
+                        <label class="btn btn-default btn-radio">
+                          <input value="No" class="active" type="radio" name="marketingMaterial3parties">No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane things-to-know" id="thingsToKnow">
+                <h2 class="no-margin">Things you need to know</h2>
+                <p>List of documents below to check out.</p>
+                <div class="pop-out" id="popOut">
+                </div>
+              </div>
+              <div class="tab-pane document-required" id="documentRequired">
+                <h2 class="no-margin">Documents we require</h2>
+                <p>Tell us a bit more about you</p>
+                <form action='/upload' method='POST' enctype='multipart/form-data'>
+                  <div class="upload-file-row hide section-control">
+                    <div class="col-xs-12 col-md-6 doc-file">
+                    </div>
+                    <div class="col-xs-10 col-sm-11 col-md-5">
+                      <div class="input-group bootstrap-filestyle-wrapper">
+                        <input type="file" class="filestyle" id="clearFile" data-url='/upload'>
+                      </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-1 col-md-1">
+                      <div class="input-group destroy-btn">
+                        <button id="" class="glyphicon glyphicon-trash btn-destroy" type="button" data-target="clearFile">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="upload-btn">
+                  <div class="col-xs-12">
+                    <button href="#" class="btn btn-upload easing-effect btn-padding full-width-xs">Upload</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <p class="alert alert-validate text-center">
+                  <button class="close" type="button" id="myAlert">×</button>
+                  Please correct the errors highlighted above to continue.
+                </p>
+              </div>
+              <div class="col-xs-12">
+                <div class="btn-pagination section-control">
+                  <ul class="section-control wizard no-padding-left list-style">
+                    <li class="previous full-width-xs">
+                      <a href="#" type="button" class="btn btn-primary easing-effect btn-padding full-width-xs">Previous Step</a>
+                    </li>
+                    <li class="next full-width-xs">
+                      <a href="#" type="button" class="btn btn-primary easing-effect btn-padding full-width-xs" id="next">Next Step</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="col-xs-6 col-md-4 col-md-offset-4 col-lg-5 col-lg-offset-3 no-padding-left no-padding-right footer-left">
+        <div class="connect-us">
+          <p class="call-us">Call us at 954-348-3499 for help</p>
+          <p class="chat-us"><a href="">Click here to live chat with us</a></p>
+          <p class="email-us"><a href="mailto:support@freedombs.com">support@FreedomBS.com</a></p>
+        </div>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-4 footer-right">
+        <div class="legal-info">
+          <ul class="list-style section-control no-padding-left no-margin-bottom">
+            <li><a href="">Support </a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- modernizr.min.js for browser compatibility -->
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- jquery.min.js for jquery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--bootstrap.min.js for responsive script-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!--bootstrapinputfile.min.js for responsive script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"></script>
+  <!--bootstrap.min.js for Wizard script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.min.js"></script>
+  <!--console-err.js to avoid cosole error in browser-->
+  <script src="js/console-err.js"></script>
+  <!--matchHeight.min.js for equal height script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.6.0/jquery.matchHeight-min.js"></script>
+  <!--headroom.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
+  <!--moment.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+  <!--datetimepicker.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/formValidation.min.js"></script>
+  <script type="text/javascript" src="js/formValidationBootstrap.js"></script>
+  <!--main.js for custom script-->
+  <script src="js/main.js"></script>
+  <script src="js/json-data.js"></script>
+</body>
+</html>

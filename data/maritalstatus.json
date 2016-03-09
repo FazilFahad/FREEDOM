@@ -1,0 +1,34 @@
+[
+{
+"id": "single",
+"mstatus": "Single"
+},
+{
+"id": "married",
+"mstatus": "Married"
+},
+{
+"id": "divorced",
+"mstatus": "Divorced"
+},
+{
+"id": "civilPart",
+"mstatus": "Civil Partnership"
+},
+{
+"id": "disCivilPArt",
+"mstatus": "Disolved Civil Partnership"
+},
+{
+"id": "separated",
+"mstatus": "Seperated"
+},
+{
+"id": "survCivilPart",
+"mstatus": "Surviving Civil Partnership"
+},
+{
+"id": "widowed",
+"mstatus": "Widowed"
+}
+]

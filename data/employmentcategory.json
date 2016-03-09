@@ -1,0 +1,13 @@
+[{
+	"id": "Permanent",
+	"empstat": "Permanent Employee"
+}, {
+	"id": "Contract",
+	"empstat": "Fixed Term Contract"
+}, {
+	"id": "Director",
+	"empstat": "Salried Director"
+}, {
+	"id": "NonSalDirector",
+	"empstat": "Non Salaried Director"
+}]

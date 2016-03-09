@@ -1,0 +1,34 @@
+[
+  {
+    "id":"week",
+    "frequency":"Weekly"
+  },
+  {
+    "id":"2Week",
+    "frequency":"Forthnightly"
+  },
+  {
+    "id":"4Week",
+    "frequency":"Every 4 Weeks"
+  },
+  {
+    "id":"month",
+    "frequency":"Monthly"
+  },
+  {
+    "id":"2Month",
+    "frequency":"Every 2 Months"
+  },
+  {
+    "id":"quarter",
+    "frequency":"Quarterly"
+  },
+  {
+    "id":"halfYear",
+    "frequency":"Half Yearly"
+  },
+  {
+    "id":"year",
+    "frequency":"Yearly"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id":"Own",
+    "singleorjoint":"Own"
+  },
+  {
+    "id":"withSomeoneElse",
+    "singleorjoint":"With Someone Else"
+  }
+]

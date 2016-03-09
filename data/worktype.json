@@ -1,0 +1,10 @@
+[
+  {
+    "id":"fulltime",
+    "worktype":"Full Time"
+  },
+  {
+    "id":"parttime",
+    "worktype":"Part Time"
+  }
+]

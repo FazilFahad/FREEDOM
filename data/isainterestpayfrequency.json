@@ -1,0 +1,18 @@
+[
+  {
+    "id":"yearly",
+    "isainterestpayfrequency":"Yearly"
+  },
+  {
+    "id":"6monthly",
+    "isainterestpayfrequency":"6-Monthly"
+  },
+  {
+    "id":"3monthly",
+    "isainterestpayfrequency":"3-Monthly"
+  },
+  {
+    "id":"monthly",
+    "isainterestpayfrequency":"Monthly"
+  }
+]

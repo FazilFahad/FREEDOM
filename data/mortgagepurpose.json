@@ -1,0 +1,26 @@
+[
+  {
+    "id":"housePurchase",
+    "mortgagepurpose":"House/Flat  Purchase"
+  },
+  {
+    "id":"remortgage",
+    "mortgagepurpose":"Remortgage"
+  },
+  {
+    "id":"sharedOwnership",
+    "mortgagepurpose":"Shared Ownership"
+  },
+  {
+    "id":"landPurchase",
+    "mortgagepurpose":"Land Purchase"
+  },
+  {
+    "id":"buyToLet",
+    "mortgagepurpose":"Buy To Let"
+  },
+  {
+    "id":"rightToBuy",
+    "mortgagepurpose":"Right to Buy"
+  }
+]

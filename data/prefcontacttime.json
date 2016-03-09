@@ -1,0 +1,14 @@
+[
+  {
+    "id":"morning",
+    "prefcontacttime":"Morning 8:00 to 12:00"
+  },
+  {
+    "id":"afternoon",
+    "prefcontacttime":"Afternoon 12:00 to 16:00"
+  },
+  {
+    "id":"evening",
+    "prefcontacttime":"Evening 16:00 to 20:00"
+  }
+]

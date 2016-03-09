@@ -1,0 +1,250 @@
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *, *:before, *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a, a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after, a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr, img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+@media (max-width: 1199px) {
+  html {
+    font-size: 85%;
+  }
+  .right-sidebar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .combo-box-arrow.selectbox-group {
+    background-position: right 5px center;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .form-text {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 80%;
+  }
+  .combo-box-arrow.selectbox-group {
+    background-position: right 10px center;
+  }
+  .no-padding-sm {
+    padding: 0;
+  }
+  .no-padding-top-sm {
+    padding-top: 0;
+  }
+  .no-padding-bottom-sm {
+    padding-bottom: 0;
+  }
+  .no-padding-left-sm {
+    padding-left: 0;
+  }
+  .no-padding-right-sm {
+    padding-right: 0;
+  }
+  .no-margin-sm {
+    margin: 0;
+  }
+  .no-margin-top-sm {
+    margin-top: 0;
+  }
+  .no-margin-bottom-sm {
+    margin-bottom: 0;
+  }
+  .no-margin-left-sm {
+    margin-left: 0;
+  }
+  .no-margin-right-sm {
+    margin-right: 0;
+  }
+  .bootstrap-filestyle-wrapper {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .destroy-btn {
+    margin-top: 15px;
+  }
+/*  .form-text::after {
+      content: "\2193";
+  }*/
+  .form-text {
+    margin-top: 0;
+}
+  .form-text a{
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 70%;
+  }
+  .left-sidebar h3, .left-sidebar p {
+    display: none;
+  }
+  .tabs-left > li > a {
+    font-size: 0;
+    height: 48px;
+  }
+  .tabs-left > li > a > span {
+    font-size: 14px;
+  }
+  .tabs-left u {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    float: none;
+  }
+  .tabs-left {
+    margin-top: 0;
+  }
+  .pull-right.opt {
+    margin-right: 25px;
+}
+
+}
+@media (max-width: 580px) {
+  html {
+    font-size: 75%;
+  }
+
+  .illegal-info {
+    display: none;
+  }
+  .call-us {
+    float: none;
+  }
+  .btn-remove,
+  .btn-submit,
+  .btn-plus {
+     text-indent: -9999px;
+     line-height: 0;
+  }
+  .btn-submit::after,
+  .btn-remove::after,
+  .btn-plus::after {
+     text-indent: 0;
+     content: "Submit";
+     display: block;
+     line-height: initial;
+  }
+  .btn-submit::after {
+     content: "Submit";
+  }
+  .btn-plus::after {
+     content: "Add";
+  }
+  .btn-remove::after {
+     content: "Remove";
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+    float: right;
+  }
+  .footer-right .legal-info, .connect-us{
+  float: right;
+  }
+}
+@media (max-width: 420px) {
+  html {
+    font-size: 70%;
+  }
+  .full-width-xs {
+    width: 100%;
+  }
+  .right-sidebar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .btn-pagination .btn:last-child {
+    margin-top: 20px;
+  }
+  .btn-group-wrapper .btn:first-child, .buttonText {
+    display: none;
+  }
+  .btn-plus::after,
+  .btn-remove::after {
+     content: '';
+     width: 0;
+     padding: 6px 0;
+  }
+  .btn-remove,
+  .btn-plus {
+    background-position: center;
+  }
+  .panel-body {
+    padding: 30px 0 15px;
+}
+.xs-padding-control {
+  padding: 0;
+}
+.pop-out a {
+    font-size: 17px;
+  }
+
+
+}

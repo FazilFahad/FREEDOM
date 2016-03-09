@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="1044" height="467" viewBox="0 0 1044 467">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+        stroke: #939393;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-2 {
+        fill: #939393;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M2.000,7.000 L19.000,7.000 L19.000,16.000 C19.000,17.105 18.105,18.000 17.000,18.000 L4.000,18.000 C2.895,18.000 2.000,17.105 2.000,16.000 L2.000,7.000 Z" class="cls-1"/>
+    <path d="M19.000,7.000 L2.000,7.000 L2.000,5.000 C2.000,3.896 2.895,3.000 4.000,3.000 L17.000,3.000 C18.105,3.000 19.000,3.896 19.000,5.000 L19.000,7.000 Z" class="cls-1"/>
+    <circle cx="1038.5" cy="460.5" r="1.5" class="cls-2"/>
+    <path d="M7.000,3.991 L7.000,1.009 " class="cls-3"/>
+    <path d="M14.000,3.991 L14.000,1.009 " class="cls-3"/>
+  </g>
+</svg>

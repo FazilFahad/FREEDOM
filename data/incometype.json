@@ -1,0 +1,34 @@
+[
+  {
+    "id":"normalSalary",
+    "incometype":"Normal Salary"
+  },
+  {
+    "id":"allowance",
+    "incometype":"Allowance"
+  },
+  {
+    "id":"netDividents",
+    "incometype":"Net Dividends"
+  },
+  {
+    "id":"secondJob",
+    "incometype":"Second Job"
+  },
+  {
+    "id":"workingTaxCredit",
+    "incometype":"Working Tax Credit"
+  },
+  {
+    "id":"childTaxCredit",
+    "incometype":"Child Tax Credit"
+  },
+  {
+    "id":"childBenefit",
+    "incometype":"Child Benefit"
+  },
+  {
+    "id":"other",
+    "incometype":"Other"
+  }
+]

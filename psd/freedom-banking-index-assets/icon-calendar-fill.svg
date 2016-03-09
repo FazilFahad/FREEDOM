@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="1042.5" height="465.5" viewBox="0 0 1042.5 465.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c92f6;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #1c92f6;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M0.500,4.500 L16.500,4.500 L16.500,13.500 C16.500,14.605 15.605,15.500 14.500,15.500 L2.500,15.500 C1.395,15.500 0.500,14.605 0.500,13.500 L0.500,4.500 Z" class="cls-1"/>
+    <path d="M16.500,5.500 L0.500,5.500 L0.500,3.500 C0.500,2.396 1.395,1.500 2.500,1.500 L14.500,1.500 C15.605,1.500 16.500,2.396 16.500,3.500 L16.500,5.500 Z" class="cls-2"/>
+    <rect x="1036" y="458" width="2" height="2" class="cls-3"/>
+    <path d="M4.500,3.491 L4.500,0.509 " class="cls-4"/>
+    <path d="M11.500,3.491 L11.500,0.509 " class="cls-4"/>
+  </g>
+</svg>

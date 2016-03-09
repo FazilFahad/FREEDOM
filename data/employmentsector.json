@@ -1,0 +1,26 @@
+[
+  {
+    "id":"civil",
+    "empsector":"Civil / Government"
+  },
+  {
+    "id":"financiallegal",
+    "empsector":"Financial/Legal"
+  },
+  {
+    "id":"productmanufacturing",
+    "empsector":"Production/Manufacturing"
+  },
+  {
+    "id":"retail",
+    "empsector":"Retail"
+  },
+  {
+    "id":"services",
+    "empsector":"Services"
+  },
+  {
+    "id":"utilities",
+    "empsector":"Utilities"
+  }
+]

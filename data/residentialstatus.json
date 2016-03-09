@@ -1,0 +1,18 @@
+[
+{
+"id": "owner",
+"gender": "Owner/Occupier"
+},
+{
+"id": "tenant",
+"gender": "Tenant"
+},
+{
+"id": "friends",
+"gender": "Staying with Friends/Partner"
+},
+{
+"id": "relatives",
+"gender": "Staying with Relatives"
+}
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id":"rightToBuy",
+    "lendingtype":"Right to Buy"
+  },
+  {
+    "id":"housePurchase",
+    "lendingtype":"House Purchase"
+  },
+  {
+    "id":"sharedOwnership",
+    "lendingtype":"Shared Ownership"
+  }
+]

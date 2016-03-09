@@ -1,0 +1,14 @@
+[
+  {
+    "id":"conditionReport",
+    "valuationtype":"Condition Report"
+  },
+  {
+    "id":"HomeBuyersSurvey",
+    "valuationtype":"HomeBuyers Survey"
+  },
+  {
+    "id":"buildingSurvey",
+    "valuationtype":"Building Survey"
+  }
+]

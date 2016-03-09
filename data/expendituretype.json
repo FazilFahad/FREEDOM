@@ -1,0 +1,38 @@
+[
+  {
+    "id":"rent",
+    "expendituretype":"Rent"
+  },
+  {
+    "id":"utilityElectricity",
+    "expendituretype":"Utility-Electricity"
+  },
+  {
+    "id":"utlityGas",
+    "expendituretype":"Utility Gas"
+  },
+  {
+    "id":"councilTax",
+    "expendituretype":"Council Tax"
+  },
+  {
+    "id":"managementCharges",
+    "expendituretype":"Management Charges"
+  },
+  {
+    "id":"groceries",
+    "expendituretype":"Groceries"
+  },
+  {
+    "id":"internet",
+    "expendituretype":"Sky / BT or Other"
+  },
+  {
+    "id":"refuseCharges",
+    "expendituretype":"Refuse Charges"
+  },
+  {
+    "id":"telephoneCharges",
+    "expendituretype":"Telephone Charges"
+  }
+]

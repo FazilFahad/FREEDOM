@@ -1,0 +1,18 @@
+[
+  {
+    "id":"engalnd",
+    "ukcountries":"Engalnd"
+  },
+  {
+    "id":"northernIreland",
+    "ukcountries":"Northern Ireland"
+  },
+  {
+    "id":"scotland",
+    "ukcountries":"Scotland"
+  },
+  {
+    "id":"wales",
+    "ukcountries":"Wales"
+  }
+]

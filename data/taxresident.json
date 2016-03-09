@@ -1,0 +1,10 @@
+[
+  {
+    "id":"uk",
+    "taxresident":"UK"
+  },
+  {
+    "id":"ukAndOther",
+    "taxresident":"UK and Other Countries"
+  }
+]

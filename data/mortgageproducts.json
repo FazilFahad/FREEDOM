@@ -1,0 +1,42 @@
+[
+  {
+    "id":"fixedRate",
+    "mortgageproducts":"Fixed Rate Mortgages"
+  },
+  {
+    "id":"trackerRate",
+    "mortgageproducts":"Tracker Rate Mortgages"
+  },
+  {
+    "id":"variableRate",
+    "mortgageproducts":"Variable Rate Mortgages"
+  },
+  {
+    "id":"discountedRate",
+    "mortgageproducts":"Discounted Rate Mortgages"
+  },
+  {
+    "id":"buytoLet",
+    "mortgageproducts":"Buy To Let Mortgages"
+  },
+  {
+    "id":"sharedOwnership",
+    "mortgageproducts":"Shared Ownership Mortgages"
+  },
+  {
+    "id":"interestOnly",
+    "mortgageproducts":"Interest Only Mortgages"
+  },
+  {
+    "id":"remortgageOnly",
+    "mortgageproducts":"Remortgage Only Mortgages"
+  },
+  {
+    "id":"offsetRate",
+    "mortgageproducts":"Offset Rate Mortgages"
+  },
+  {
+    "id":"firstTimeBuyer",
+    "mortgageproducts":"First Time Buyer Mortgages"
+  }
+]

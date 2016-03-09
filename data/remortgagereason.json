@@ -1,0 +1,30 @@
+[
+  {
+    "id":"debtConsolidation",
+    "remotgagereason":"Debt Consolidation"
+  },
+  {
+    "id":"homeImprovements",
+    "remotgagereason":"Home/Property Improvements"
+  },
+  {
+    "id":"purchaseFreehold",
+    "remotgagereason":"Purchase of Freehold"
+  },
+  {
+    "id":"purchaseofInterest",
+    "remotgagereason":"Purchase of Interest in Property"
+  },
+  {
+    "id":"purchaseLand",
+    "remotgagereason":"Purchase of Land"
+  },
+  {
+    "id":"transferEquity",
+    "remotgagereason":"Transfer of Equity"
+  },
+  {
+    "id":"betterRate",
+    "remotgagereason":"Better Interest Rate"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id":"email",
+    "prefcontact":"Email"
+  },
+  {
+    "id":"home",
+    "prefcontact":"Home Telephone"
+  },
+  {
+    "id":"mobile",
+    "prefcontact":"Mobile Telephone"
+  },
+  {
+    "id":"work ",
+    "prefcontact":"Work Telephone"
+  },
+  {
+    "id":"post  ",
+    "prefcontact":"Post"
+  }
+]

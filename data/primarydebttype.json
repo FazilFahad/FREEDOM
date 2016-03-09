@@ -1,0 +1,30 @@
+[
+  {
+    "id":"mortgage",
+    "primarydebttype":"Mortgage"
+  },
+  {
+    "id":"mortgagearrears",
+    "primarydebttype":"Mortgage Arrears"
+  },
+  {
+    "id":"otherLoansOnHouse",
+    "primarydebttype":"Other Loans Secured on House"
+  },
+  {
+    "id":"otherSecuredLoans",
+    "primarydebttype":"Other Secured Loans"
+  },
+  {
+    "id":"utilityArrears",
+    "primarydebttype":"Utility Arrears"
+  },
+  {
+    "id":"hpOnCar",
+    "primarydebttype":"HP on Car"
+  },
+  {
+    "id":"rentArrears",
+    "primarydebttype":"Rent Arrears"
+  }
+]

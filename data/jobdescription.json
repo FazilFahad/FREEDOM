@@ -1,0 +1,26 @@
+[
+  {
+    "id":"management",
+    "jobdesc":"Management / Specialist"
+  },
+  {
+    "id":"manual",
+    "jobdesc":"Manual"
+  },
+  {
+    "id":"partSkilled",
+    "jobdesc":"Partly Skilled"
+  },
+  {
+    "id":"professional",
+    "jobdesc":"Professional"
+  },
+  {
+    "id":"skillManual",
+    "jobdesc":"Skilled Manual"
+  },
+  {
+    "id":"skillNonManual",
+    "jobdesc":"Skilled Non Manual"
+  }
+]

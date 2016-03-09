@@ -1,0 +1,18 @@
+[
+  {
+    "id":"permananet",
+    "empstatus":"Permanent Employee"
+  },
+  {
+    "id":"contract",
+    "empstatus":"Fixed Term Contract"
+  },
+  {
+    "id":"director",
+    "empstatus":"Salaried Director"
+  },
+  {
+    "id":"noSalDirector",
+    "empstatus":"Non Salaried Director"
+  }
+]

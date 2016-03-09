@@ -1,0 +1,46 @@
+[
+  {
+    "id":"proofOfIdentity",
+    "Documentsttoupload":"Proof of Identification"
+  },
+  {
+    "id":"addressProof1",
+    "Documentsttoupload":"Address Proof 1"
+  },
+  {
+    "id":"addressProof2",
+    "Documentsttoupload":"Address Proof 2"
+  },
+  {
+    "id":"addressProof3",
+    "Documentsttoupload":"Address Proof 3"
+  },
+  {
+    "id":"bankStatement",
+    "Documentsttoupload":"Bank Statement"
+  },
+  {
+    "id":"incomeProof1",
+    "Documentsttoupload":"Income Proof 1"
+  },
+  {
+    "id":"incomeProof2",
+    "Documentsttoupload":"Income Proof 2"
+  },
+  {
+    "id":"incomeProof3",
+    "Documentsttoupload":"Income Proof 3"
+  },
+  {
+    "id":"incomeTaxProof",
+    "Documentsttoupload":"Income Tax Proof"
+  },
+  {
+    "id":"bankStatement",
+    "Documentsttoupload":"Bank Statement"
+  },
+  {
+    "id":"digitalPhoto",
+    "Documentsttoupload":"Digital Passport Photo"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id":"housePurchase",
+    "purposeofloan":"House/Flat  Purchase"
+  },
+  {
+    "id":"remortgage",
+    "purposeofloan":"Remortgage"
+  }
+]

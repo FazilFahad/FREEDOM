@@ -1,0 +1,62 @@
+[
+  {
+    "id":"accountant",
+    "jobtitle":"Accountant"
+  },
+  {
+    "id":"armed forces",
+    "jobtitle":"Armed Forces"
+  },
+  {
+    "id":"civilServant",
+    "jobtitle":"Civil Servant"
+  },
+  {
+    "id":"dentist",
+    "jobtitle":"Dentist"
+  },
+  {
+    "id":"engineer",
+    "jobtitle":"Engineer"
+  },
+  {
+    "id":"fireman",
+    "jobtitle":"Fireman"
+  },
+  {
+    "id":"gpMedicalPractitioner",
+    "jobtitle":"GP/Medical Practitioner"
+  },
+  {
+    "id":"itConsultant",
+    "jobtitle":"IT Consultant"
+  },
+  {
+    "id":"itContractor",
+    "jobtitle":"IT Contractor"
+  },
+  {
+    "id":"policeOfficer",
+    "jobtitle":"Police Officer"
+  },
+  {
+    "id":"secretary",
+    "jobtitle":"Secretary"
+  },
+  {
+    "id":"solicitor",
+    "jobtitle":"Solicitor"
+  },
+  {
+    "id":"teacher",
+    "jobtitle":"Teacher"
+  },
+  {
+    "id":"veterinarySurgeon",
+    "jobtitle":"Veterinary Surgeon"
+  },
+  {
+    "id":"other",
+    "jobtitle":"Other"
+  }
+]

@@ -1,0 +1,289 @@
+<!doctype html>
+<html class="" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ISA Saving</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain-->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- normalize.min.css for browser compatibility -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--bootstrap.min.css for responsive-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!--fileinput.min.css for responsive-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.0/css/fileinput.min.css"> -->
+  <!--DataPicker.min.css for responsive-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+  <!--googlefonts.css for font style-->
+  <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
+  <!--main.css for custom style-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--media-query.css for custom style-->
+  <link rel="stylesheet" href="css/media-query.css">
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <header class="header--fixed" id="header" data-headroom>
+    <section class="primary-nav">
+      <div class="container">
+        <nav class="navbar navbar-default no-margin stylish-navbar no-border no-border-radius bg-transparent">
+          <div class="navbar-header vertical-center">
+            <h1 class="no-margin">
+                              <a class="navbar-brand" href="index.html"></a>
+                          </h1>
+          </div>
+          <div class="btn-group-wrapper vertical-center">
+            <button type="button" class="btn btn-default easing-effect btn-padding">Save & Exit</button>
+            <button type="button" class="btn btn-success easing-effect btn-padding">Submit Details</button>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="container rootwizard" id="rootwizard">
+      <div class="row">
+        <div class="col-xs-2 col-sm-5 col-md-4 col-lg-3 no-padding-right child no-padding-left-sm">
+          <div class="left-sidebar">
+            <p class="no-margin">Please fill out the forms below.</p>
+            <ul class="nav nav-tabs tabs-left">
+              <li class="active">
+                <a href="#isaSaving" data-toggle="tab">
+                  <u>1</u> Your ISA Savings Details
+                </a>
+              </li>
+              <li class="">
+                <a href="#thingsToKnow" data-toggle="tab">
+                  <u>2</u> Things you need to know
+                </a>
+              </li>
+              <li class="">
+                <a href="#documentRequired" data-toggle="tab">
+                  <u>3</u>Documents we require<i class="label label-info hidden-xs">New</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-7 col-md-8 col-lg-9 no-padding-left no-padding-right-sm child">
+          <div id="bar" class="progress progress-success progress-striped active no-margin-bottom no-border-radius">
+            <div class="bar bar-success"></div>
+          </div>
+          <div class="right-sidebar section-control parent">
+            <div class="tab-content section-control">
+              <div class="tab-pane mortgage-details active" id="isaSaving">
+                <h2 class="no-margin">Your ISA Savings Details</h2>
+                <p>Tell us a bit more about you</p>
+                <form action="" id="isaSavingForm" class="valdition-class">
+                  <div class="panel-group" id="accordionisa" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default isa-details">
+                      <div class="panel-heading" role="tab" id="isaDetails">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordionisa" href="#isaDetailsCollapse" aria-expanded="true" aria-controls="isaDetailsCollapse">
+                            Your ISA Details
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="isaDetailsCollapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="isaDetails">
+                        <div class="panel-body">
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fISAType" class="child">Which type of ISA Account do you want to open?</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <select class="form-control combo-box-arrow show-pop" name="selectBoxValidation" autocomplete='off' id="fISAType" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="fNINumber" class="child">What is your National Insurance Number?</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <input type="text" class="form-control show-pop" autocomplete='off' name="numberValidation" id="fNINumber" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain." />
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fIntPayFreq" class="child">When would you like your interest to be paid?</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <select class="form-control combo-box-arrow show-pop" autocomplete='off' name="selectBoxValidation" id="fIntPayFreq" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default property-buy">
+                      <div class="panel-heading" role="tab" id="isa-bank">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionisa" href="#isaBankCollapse" aria-expanded="false" aria-controls="isaBankCollapse">
+                            Your Bank Details
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="isaBankCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="isa-bank">
+                        <div class="panel-body">
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="fSortCode" class="child">Bank's Sort Code </label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <input type="text" class="form-control show-pop" autocomplete='off' name="numberValidation" id="fSortCode" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain." />
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="fAccNumber" class="child">Account Number </label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <input type="text" class="form-control show-pop" name="accountNumberValidation"  autocomplete='off' id="fAccNumber" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain." />
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="fAccHolder" class="child">Account Holder Name(s)</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <input type="text" class="form-control show-pop" name="nameValidationPlus" id="fAccHolder" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="fAccRef" class="child">Reference to be made with payments</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <input type="text" class="form-control show-pop" id="fAccRef" name="nameValidation" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default isa-tax">
+                      <div class="panel-heading" role="tab" id="isaTax">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionisa" href="#isaTaxCollapse" aria-expanded="false" aria-controls="isaTaxCollapse">
+                          Where are you resident for Tax Purposes?
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="isaTaxCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="isaTax">
+                        <div class="panel-body">
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom select-container">
+                              <label for="fTaxResident" class="child">Where are you resident for Tax Purposes?</label><i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <select class="form-control combo-box-arrow show-pop" name="selectBoxValidation" autocomplete='off' id="fTaxResident" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                                  </form>
+                  </div>
+                  <div class="tab-pane things-to-know" id="thingsToKnow">
+                    <h2 class="no-margin">Things you need to know</h2>
+                    <p>List of documents below to check out.</p>
+                    <div class="pop-out" id="popOut">
+                      <!-- <a href="" onclick="window.open('index.html', 'incomeTax', 'width=600, height=400, resizable=false,left=600,top=300');  return false;" class="listOfThinksToKnow"></a>
+                      <a href="" onclick="window.open('index.html', 'termsCondition', 'width=600, height=400, resizable=false,left=600,top=300');  return false;" class="listOfThinksToKnow">Terms and Conditions for Mortgages</a>
+                      <a href="" onclick="window.open('index.html', 'Preclosure', 'width=600, height=400, resizable=false,left=600,top=300');  return false;" class="listOfThinksToKnow">Preclosure Fees <i class="label label-info">New</i></a> -->
+                    </div>
+                  </div>
+                  <div class="tab-pane document-required" id="documentRequired">
+                    <h2 class="no-margin">Documents we require</h2>
+                    <p>Tell us a bit more about you</p>
+                    <form action='/upload' method='POST' enctype='multipart/form-data'>
+                      <div class="upload-file-row hide section-control">
+                        <div class="col-xs-12 col-md-6 doc-file">
+                        </div>
+                        <div class="col-xs-10 col-sm-11 col-md-5">
+                          <div class="input-group bootstrap-filestyle-wrapper">
+                            <input type="file" class="filestyle" id="clearFile" data-url='/upload'>
+                          </div>
+                        </div>
+                        <div class="col-xs-2 col-sm-1 col-md-1">
+                          <div class="input-group destroy-btn">
+                            <button id="" class="glyphicon glyphicon-trash btn-destroy" type="button" data-target="clearFile">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="upload-btn">
+                      <div class="col-xs-12">
+                        <button href="#" class="btn btn-upload easing-effect btn-padding full-width-xs">Upload</button>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="col-xs-12">
+                  <p class="alert alert-validate text-center">
+                    <button class="close" type="button" id="myAlert">×</button>
+                    Please correct the errors highlighted above to continue.
+                  </p>
+                </div>
+                <div class="col-xs-12">
+                  <div class="btn-pagination section-control">
+                    <ul class="section-control wizard no-padding-left list-style">
+                      <li class="previous full-width-xs">
+                        <a href="#" type="button" class="btn btn-primary easing-effect btn-padding full-width-xs">Previous Step</a>
+                      </li>
+                      <li class="next full-width-xs">
+                        <a href="#" type="button" class="btn btn-primary easing-effect btn-padding full-width-xs" id="next">Next Step</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="col-xs-6 col-md-4 col-md-offset-4 col-lg-5 col-lg-offset-3 no-padding-left no-padding-right footer-left">
+        <div class="connect-us">
+          <p class="call-us">Call us at 954-348-3499 for help</p>
+          <p class="chat-us"><a href="">Click here to live chat with us</a></p>
+          <p class="email-us"><a href="mailto:support@freedombs.com">support@FreedomBS.com</a></p>
+        </div>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-4 footer-right">
+        <div class="legal-info">
+          <ul class="list-style section-control no-padding-left no-margin-bottom">
+            <li><a href="">Support </a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- modernizr.min.js for browser compatibility -->
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- jquery.min.js for jquery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--bootstrap.min.js for responsive script-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!--bootstrapinputfile.min.js for responsive script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"></script>
+  <!--bootstrap.min.js for responsive script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.min.js"></script>
+  <!--console-err.js to avoid cosole error in browser-->
+  <script src="js/console-err.js"></script>
+  <!--matchHeight.min.js for equal height script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.6.0/jquery.matchHeight-min.js"></script>
+  <!--headroom.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
+  <!--moment.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+  <!--datetimepicker.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/formValidation.min.js"></script>
+  <script type="text/javascript" src="js/formValidationBootstrap.js"></script>
+  <!--main.js for custom script-->
+  <script src="js/main.js"></script>
+  <script src="js/json-data.js"></script>
+</body>
+</html>

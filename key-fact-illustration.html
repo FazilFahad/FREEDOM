@@ -1,0 +1,457 @@
+<!doctype html>
+<html class="" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Key Fact Illustration</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain-->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- normalize.min.css for browser compatibility -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--bootstrap.min.css for responsive-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!--fileinput.min.css for responsive-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.0/css/fileinput.min.css"> -->
+  <!--DataPicker.min.css for responsive-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+  <!--googlefonts.css for font style-->
+  <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
+  <!--main.css for custom style-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--media-query.css for custom style-->
+  <link rel="stylesheet" href="css/media-query.css">
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <header class="header--fixed" id="header" data-headroom>
+    <section class="primary-nav">
+      <div class="container">
+        <nav class="navbar navbar-default no-margin stylish-navbar no-border no-border-radius bg-transparent">
+          <div class="navbar-header vertical-center">
+            <h1 class="no-margin">
+                              <a class="navbar-brand" href="index.html"></a>
+                          </h1>
+          </div>
+          <div class="btn-group-wrapper vertical-center">
+            <button type="button" class="btn btn-default easing-effect btn-padding">Save & Exit</button>
+            <button type="button" class="btn btn-success easing-effect btn-padding">Submit Details</button>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <main>
+    <div class="container rootwizard" id="rootwizard">
+      <div class="row">
+        <div class="col-xs-2 col-sm-5 col-md-4 col-lg-3 no-padding-right child no-padding-left-sm">
+          <div class="left-sidebar">
+            <h3 class="no-margin">Hello!</h3>
+            <p class="no-margin">Please fill out the forms below.</p>
+            <ul class="nav nav-tabs tabs-left">
+              <li class="active">
+                <a href="#keyfactyourdetails" data-toggle="tab">
+                  <u>1</u> Your Details
+                </a>
+              </li>
+              <li class="">
+                <a href="#keyfactmortgagedetails" data-toggle="tab">
+                  <u>2</u> Mortgage Details
+                </a>
+              </li>
+              <li class="">
+                <a href="#keyfactourproduct" data-toggle="tab">
+                  <u>3</u> Our Products & Fees
+                </a>
+              </li>
+              <li class="">
+                <a href="#keyfactthingsKnow" data-toggle="tab">
+                  <u>4</u> Things you need to know
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-7 col-md-8 col-lg-9 no-padding-left no-padding-right-sm child">
+          <div id="bar" class="progress progress-success progress-striped active no-margin-bottom no-border-radius">
+            <div class="bar bar-success"></div>
+          </div>
+          <div class="right-sidebar section-control parent">
+            <div class="tab-content section-control">
+              <div class="tab-pane your-details active" id="keyfactyourdetails">
+                <h2 class="no-margin">Your Details</h2>
+                <p>Tell us a bit more about you</p>
+                <form action="" id="keyFact" class="valdition-class">
+                  <div class="panel-group" id="accordionApplicantOne" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default your-application">
+                      <div class="panel-heading" role="tab" id="applicantOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordionApplicantOne" href="#applicantOneCollapse" aria-expanded="true" aria-controls="applicantOneCollapse">
+                            Applicant 1
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="applicantOneCollapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="applicantOne">
+                        <div class="panel-body">
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="f1Title" class="child">Title</label>
+                              <div class="select-container">
+                              <select class="form-control combo-box-arrow ftitle-json" autocomplete='off' id="f1Title" name="selectBoxValidation">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="f1Fname" class="child">Legal First Name(s)</label>
+                              <input type="text" name="nameValidation" class="form-control" id="f1Fname" autocomplete='off'>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="f1Lname" class="child">Legal Last Name</label>
+                              <input type="text" name="nameValidation" class="form-control" autocomplete='off' id="f1Lname">
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group section-control btn-group-bottom">
+                              <i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <div class="btn-group btn-radio-wrapper yesNoPopOver" data-toggle="buttons" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                <label for="f1FirstTime" class="child">Are you a First Time Buyer</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="f1FirstTime" value="Yes" type="radio">Yes
+                          			</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="f1FirstTime" value="No" class="active" type="radio">No
+                          			</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default property-buy">
+                      <div class="panel-heading" role="tab" id="applicantTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionApplicantOne" href="#applicantTwoCollapse" aria-expanded="false" aria-controls="applicantTwoCollapse">
+                            Applicant 2
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="applicantTwoCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="applicantTwo">
+                        <div class="panel-body">
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="f2Title" class="child">Title</label>
+                              <div class="select-container">
+                              <select class="form-control combo-box-arrow ftitle-json" autocomplete='off' id="f2Title" name="selectBoxValidation">
+                                <option value="" disabled selected>Select</option>
+                              </select>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="f2Fname" class="child">Legal First Name(s)</label>
+                              <input type="text" name="nameValidation" class="form-control" id="f2Fname" autocomplete='off'>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group btn-group-bottom">
+                              <label for="f2Lname" class="child">Legal Last Name</label>
+                              <input type="text" name="nameValidation" class="form-control" autocomplete='off' id="f2Lname">
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group section-control btn-group-bottom">
+                              <i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <div class="btn-group btn-radio-wrapper yesNoPopOver" data-toggle="buttons" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                <label for="f2FirstTime" class="child">Are you a First Time Buyer</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="f2FirstTime" value="Yes" type="radio">Yes
+                          			</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="f2FirstTime" value="No" class="active" type="radio">No
+                          			</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane mortgage-details" id="keyfactmortgagedetails">
+                <h2 class="no-margin">Mortgage Details</h2>
+                <p>Tell us a bit more about you</p>
+                <form action="" id="KeyFactMortgage" class="valdition-class">
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fLoanPurp" class="child">What is the purpose of the loan?</label>
+                      <!-- <i class="hidden-sm hidden-md hidden-lg help-icon"></i> -->
+                      <select class="form-control combo-box-arrow show-pop" name="selectBoxValidation" autocomplete='off' id="fLoanPurp" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fLoanAmt" class="child">How much would you like to borrow?</label>
+                      <div class="input-group">
+                        <div class="input-group-addon pound-pad">&pound;</div>
+                        <input type="text" name="numberValidation" class="form-control show-pop" id="fLoanAmt" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fPurcPrice" class="child">What is the purchase price of the property?</label>
+                      <div class="input-group">
+                        <div class="input-group-addon pound-pad">&pound;</div>
+                        <input type="text" name="numberValidation" class="form-control show-pop" id="fPurcPrice" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fEstMarketVal" class="child">What is the estimated market value of the property?</label>
+                      <div class="input-group">
+                        <div class="input-group-addon pound-pad">&pound;</div>
+                        <input type="text" name="numberValidation" class="form-control show-pop" id="fEstMarketVal" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group full-width no-margin-bottom">
+                      <label for="fPeriodYrs" class="child">Over what period would you like to borrow?</label>
+                      <div class="form-group btn-group-bottom half-width">
+                      <input type="text" name="borrowYears" class="form-control show-pop prefix-field" placeholder="Years" autocomplete='off' id="fPeriodYrs">
+                    </div>
+                      <div class="form-group btn-group-bottom half-width">
+                      <input type="text" name="monthValidation" class="form-control show-pop suffix-field" placeholder="Months" autocomplete='off' id="fPeriodYrs">
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group section-control btn-group-bottom">
+                      <!-- <i class="hidden-sm hidden-md hidden-lg help-icon"></i> -->
+                      <div class="btn-group btn-radio-wrapper yesNoPopOver fUsValuation" data-toggle="buttons" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                        <label for="fUsValuation" class="child">Do you want Freedom Building Society to do the Valuation?</label>
+                        <label class="btn btn-default btn-radio">
+                          <input name="fUsValuation" value="Yes" type="radio">Yes
+                        </label>
+                        <label class="btn btn-default btn-radio">
+                          <input name="fUsValuation" value="No" class="active" type="radio">No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fValType" class="child">What type of Valuation do you require?</label>
+                      <!-- <i class="hidden-sm hidden-md hidden-lg help-icon"></i> -->
+                      <select disabled class="form-control combo-box-arrow show-pop" name="selectBoxValidation" autocomplete='off' id="fValType" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane our-Products " id="keyfactourproduct">
+                <h2 class="no-margin">Our Products & Fees</h2>
+                <p>Tell us a bit more about you</p>
+                <form action="" id="keyFactProductForm" class="valdition-class">
+                  <div class="rwo-wrapper section-control">
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom select-container">
+                      <label for="fProductType" class="child">Choose which mortgage product you would like?</label>
+                      <!-- <i class="hidden-sm hidden-md hidden-lg help-icon"></i> -->
+                      <select class="form-control combo-box-arrow show-pop" id="fProductType" name="selectBoxValidation" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                        <option value="" disabled selected>Select</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fCapInt" class="child">If you wish to split the value - Enter the Capital & Interest Amount</label>
+                      <!-- <i class="hidden-sm hidden-md hidden-lg help-icon"></i> -->
+                      <div class="input-group">
+                        <div class="input-group-addon pound-pad">&pound;</div>
+                        <input type="text" name="fLoanSplit" class="form-control show-pop" id="fCapInt" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="form-group btn-group-bottom">
+                      <label for="fIntOnly" class="child">If you wish to split the value - Enter the Interest Only Amount</label>
+                      <!-- <i class="hidden-sm hidden-md hidden-lg help-icon"></i> -->
+                      <div class="input-group">
+                        <div class="input-group-addon pound-pad">&pound;</div>
+                        <input type="text" name="fLoanSplit" class="form-control show-pop" id="fIntOnly" autocomplete='off' title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="panel-group" id="accordionOurProduct" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default key-fact-loan">
+                      <div class="panel-heading" role="tab" id="keyFactLoan">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionOurProduct" href="#keyFactLoanCollapse" aria-expanded="false" aria-controls="keyFactLoanCollapse">
+                            Fees you may choose to add to your Loan
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="keyFactLoanCollapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="keyFactLoan">
+                        <div class="panel-body">
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group section-control btn-group-bottom">
+                              <i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <div class="btn-group btn-radio-wrapper yesNoPopOver" data-toggle="buttons" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                <label for="fElectronicFee" class="child">Electronic Transfer Fee - £35</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="fElectronicFee" value="Yes" type="radio">Yes
+                          			</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="fElectronicFee" value="No" class="active" type="radio">No
+                          			</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group section-control btn-group-bottom">
+                              <i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <div class="btn-group btn-radio-wrapper yesNoPopOver" data-toggle="buttons" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                <label for="fArrangeFee" class="child">Product Arrangement Fee - £900</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="fArrangeFee" value="Yes" type="radio">Yes
+                          			</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="fArrangeFee" value="No" class="active" type="radio">No
+                          			</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default pay-front">
+                      <div class="panel-heading" role="tab" id="payFront">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionOurProduct" href="#payFrontCollapse" aria-expanded="false" aria-controls="payFrontCollapse">
+                            Fees you must pay up front and cannot be added to your Loan
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="payFrontCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="payFront">
+                        <div class="panel-body">
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group section-control btn-group-bottom">
+                              <i class="hidden-sm hidden-md hidden-lg help-icon"></i>
+                              <div class="btn-group btn-radio-wrapper yesNoPopOver" data-toggle="buttons" title="Why do we need these details?" data-content="This is an optional detail that we require for our internal verification records that we maintain.">
+                                <label for="fValuationFee" class="child">Valuation Fee - £510</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="fValuationFee" value="Yes" type="radio">Yes
+                          			</label>
+                          			<label class="btn btn-default btn-radio">
+                          				<input name="fValuationFee" value="No" class="active" type="radio">No
+                          			</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane things-to-know" id="keyfactthingsKnow">
+                <h2 class="no-margin">Things you need to know</h2>
+                <p>List of documents below to check out.</p>
+                <div class="pop-out" id="popOut">
+                  <!-- <a href="" onclick="window.open('index.html', 'incomeTax', 'width=600, height=400, resizable=false,left=600,top=300');  return false;" class="listOfThinksToKnow"></a>
+                  <a href="" onclick="window.open('index.html', 'termsCondition', 'width=600, height=400, resizable=false,left=600,top=300');  return false;" class="listOfThinksToKnow">Terms and Conditions for Mortgages</a>
+                  <a href="" onclick="window.open('index.html', 'Preclosure', 'width=600, height=400, resizable=false,left=600,top=300');  return false;" class="listOfThinksToKnow">Preclosure Fees <i class="label label-info">New</i></a> -->
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="btn-pagination section-control">
+                  <ul class="section-control wizard no-padding-left list-style">
+                    <li class="previous full-width-xs">
+                      <a href="#" type="button" class="btn btn-primary easing-effect btn-padding full-width-xs">Previous Step</a>
+                    </li>
+                    <li class="next full-width-xs">
+                      <a href="#" type="button" class="btn btn-primary easing-effect btn-padding full-width-xs">Next Step</a>
+                    </li>
+                    <li class="next finish full-width-xs" style="display:none;">
+                      <a href="#" class="btn btn-primary easing-effect btn-padding full-width-xs">Finish</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="col-xs-6 col-md-4 col-md-offset-4 col-lg-5 col-lg-offset-3 no-padding-left no-padding-right footer-left">
+        <div class="connect-us">
+          <p class="call-us">Call us at 954-348-3499 for help</p>
+          <p class="chat-us"><a href="">Click here to live chat with us</a></p>
+          <p class="email-us"><a href="mailto:support@freedombs.com">support@FreedomBS.com</a></p>
+        </div>
+        </div>
+        <div class="col-xs-6 col-md-4 col-lg-4 footer-right">
+        <div class="legal-info">
+          <ul class="list-style section-control no-padding-left no-margin-bottom">
+            <li><a href="">Support </a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- modernizr.min.js for browser compatibility -->
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- jquery.min.js for jquery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script>
+    !window.jQuery && document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+  </script>
+  <!--bootstrap.min.js for responsive script-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!--bootstrapinputfile.min.js for responsive script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-filestyle/1.2.1/bootstrap-filestyle.min.js"></script>
+  <!--bootstrap.min.js for responsive script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.min.js"></script>
+  <!--console-err.js to avoid cosole error in browser-->
+  <script src="js/console-err.js"></script>
+  <!--matchHeight.min.js for equal height script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.6.0/jquery.matchHeight-min.js"></script>
+  <!--headroom.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
+  <!--moment.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+  <!--datetimepicker.min.js for responsive script-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/formValidation.min.js"></script>
+  <script type="text/javascript" src="js/formValidationBootstrap.js"></script>
+  <!--main.js for custom script-->
+  <script src="js/main.js"></script>
+  <script src="js/json-data.js"></script>
+</body>
+
+</html>
